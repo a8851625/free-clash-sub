@@ -1,0 +1,3914 @@
+allow-lan: true
+bind-address: '*'
+dns:
+    default-nameserver:
+        - 223.5.5.5
+        - 114.114.114.114
+    enable: true
+    enabled: true
+    enhanced-mode: fake-ip
+    fake-ip-filter:
+        - '*.lan'
+        - '*.linksys.com'
+        - '*.linksyssmartwifi.com'
+        - swscan.apple.com
+        - mesu.apple.com
+        - '*.msftconnecttest.com'
+        - '*.msftncsi.com'
+        - time.*.com
+        - time.*.gov
+        - time.*.edu.cn
+        - time.*.apple.com
+        - time1.*.com
+        - time2.*.com
+        - time3.*.com
+        - time4.*.com
+        - time5.*.com
+        - time6.*.com
+        - time7.*.com
+        - ntp.*.com
+        - ntp1.*.com
+        - ntp2.*.com
+        - ntp3.*.com
+        - ntp4.*.com
+        - ntp5.*.com
+        - ntp6.*.com
+        - ntp7.*.com
+        - '*.time.edu.cn'
+        - '*.ntp.org.cn'
+        - +.pool.ntp.org
+        - time1.cloud.tencent.com
+        - +.music.163.com
+        - '*.126.net'
+        - musicapi.taihe.com
+        - music.taihe.com
+        - songsearch.kugou.com
+        - trackercdn.kugou.com
+        - '*.kuwo.cn'
+        - api-jooxtt.sanook.com
+        - api.joox.com
+        - joox.com
+        - +.y.qq.com
+        - +.music.tc.qq.com
+        - aqqmusic.tc.qq.com
+        - +.stream.qqmusic.qq.com
+        - '*.xiami.com'
+        - +.music.migu.cn
+        - +.srv.nintendo.net
+        - +.stun.playstation.net
+        - xbox.*.microsoft.com
+        - +.xboxlive.com
+        - localhost.ptlogin2.qq.com
+        - proxy.golang.org
+        - stun.*.*
+        - stun.*.*.*
+        - '*.mcdn.bilivideo.cn'
+        - '*.localdomain'
+        - '*.example'
+        - '*.invalid'
+        - '*.localhost'
+        - '*.test'
+        - '*.local'
+        - '*.home.arpa'
+        - time-ios.apple.com
+        - music.163.com
+        - '*.music.163.com'
+        - y.qq.com
+        - '*.y.qq.com'
+        - streamoc.music.tc.qq.com
+        - mobileoc.music.tc.qq.com
+        - isure.stream.qqmusic.qq.com
+        - dl.stream.qqmusic.qq.com
+        - amobile.music.tc.qq.com
+        - '*.music.migu.cn'
+        - music.migu.cn
+        - +.msftconnecttest.com
+        - +.msftncsi.com
+        - localhost.sec.qq.com
+        - +.qq.com
+        - +.tencent.com
+        - '*.n.n.srv.nintendo.net'
+        - xbox.*.*.microsoft.com
+        - '*.*.xboxlive.com'
+        - xnotify.xboxlive.com
+        - +.battlenet.com.cn
+        - +.wotgame.cn
+        - +.wggames.cn
+        - +.wowsgame.cn
+        - +.wargaming.net
+        - +.stun.*.*
+        - +.stun.*.*.*
+        - +.stun.*.*.*.*
+        - +.stun.*.*.*.*.*
+        - heartbeat.belkin.com
+        - '*.router.asus.com'
+        - swquery.apple.com
+        - swdownload.apple.com
+        - swcdn.apple.com
+        - swdist.apple.com
+        - lens.l.google.com
+        - stun.l.google.com
+        - na.b.g-tun.com
+        - +.nflxvideo.net
+        - '*.square-enix.com'
+        - '*.finalfantasyxiv.com'
+        - '*.ffxiv.com'
+        - '*.ff14.sdo.com'
+        - ff.dorado.sdo.com
+        - +.media.dssott.com
+        - shark007.net
+        - Mijia Cloud
+        - +.cmbchina.com
+        - +.cmbimg.com
+        - local.adguard.org
+        - +.sandai.net
+        - +.n0808.com
+        - +.heheda.vip
+        - +.miwifi.com
+        - +.itv.lat
+        - +.pi.0472.org
+        - services.googleapis.cn
+    fake-ip-range: 198.18.0.1/16
+    fallback:
+        - https://dns.cloudflare.com/dns-query#全球直连
+        - https://1.1.1.1/dns-query#全球直连
+        - 1.1.1.1:53#全球直连
+        - 8.8.8.8:53#全球直连
+        - 202.96.128.86:53#全球直连
+        - 202.96.128.166:53#全球直连
+    fallback-filter:
+        geoip: false
+        ipcidr:
+            - 240.0.0.0/4
+            - 0.0.0.0/32
+    ipv6: true
+    listen: 0.0.0.0:7874
+    nameserver:
+        - https://doh.apad.pro/dns-query
+        - tls://1.1.1.1/dns-query
+        - https://dns.alidns.com/dns-query
+external-controller: 0.0.0.0:9090
+geodata-loader: standard
+ipv6: true
+log-level: info
+mixed-port: 7893
+mode: rule
+port: 7890
+profile:
+    store-fake-ip: true
+    store-selected: true
+proxies:
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 2|d*********g.com_0
+      network: ws
+      port: 2086
+      server: 104.19.51.232
+      servername: ip006.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+      ws-opts:
+        headers:
+            Host: ip006.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 2|d*********g.com_1
+      network: ws
+      port: 2086
+      server: 23.227.38.5
+      servername: ip006.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+      ws-opts:
+        headers:
+            Host: ip006.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 2|d*********g.com_2
+      network: ws
+      port: 2086
+      server: 104.16.148.244
+      servername: ip006.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+      ws-opts:
+        headers:
+            Host: ip006.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 2|d*********g.com_3
+      network: ws
+      port: 2086
+      server: 104.19.38.62
+      servername: ip006.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+      ws-opts:
+        headers:
+            Host: ip006.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: '3|d*********g.com_0 #1'
+      network: ws
+      port: 2086
+      server: 104.19.32.46
+      servername: ip006.3196772.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+      ws-opts:
+        headers:
+            Host: ip006.3196772.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: '3|d*********g.com_1 #1'
+      network: ws
+      port: 2086
+      server: 23.227.38.6
+      servername: ip006.3196772.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+      ws-opts:
+        headers:
+            Host: ip006.3196772.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: '3|d*********g.com_2 #1'
+      network: ws
+      port: 2086
+      server: 104.19.51.232
+      servername: ip006.3196772.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+      ws-opts:
+        headers:
+            Host: ip006.3196772.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: '3|d*********g.com_3 #1'
+      network: ws
+      port: 2086
+      server: 104.19.38.62
+      servername: ip006.3196772.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+      ws-opts:
+        headers:
+            Host: ip006.3196772.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: '4|d*********g.com_0 #2'
+      network: ws
+      port: 2086
+      server: 104.19.46.233
+      servername: ip005.3196772.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+      ws-opts:
+        headers:
+            Host: ip005.3196772.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: '4|d*********g.com_1 #2'
+      network: ws
+      port: 2086
+      server: 23.227.38.6
+      servername: ip005.3196772.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+      ws-opts:
+        headers:
+            Host: ip005.3196772.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: '4|d*********g.com_2 #2'
+      network: ws
+      port: 2086
+      server: 104.19.51.232
+      servername: ip005.3196772.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+      ws-opts:
+        headers:
+            Host: ip005.3196772.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: '4|d*********g.com_3 #2'
+      network: ws
+      port: 2086
+      server: 104.19.38.62
+      servername: ip005.3196772.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+      ws-opts:
+        headers:
+            Host: ip005.3196772.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: '5|d*********g.com_0 #3'
+      network: ws
+      port: 2052
+      server: 104.19.38.18
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: '5|d*********g.com_1 #3'
+      network: ws
+      port: 2052
+      server: 104.26.0.66
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: '5|d*********g.com_2 #3'
+      network: ws
+      port: 2052
+      server: 23.227.38.13
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: '5|d*********g.com_3 #3'
+      network: ws
+      port: 2052
+      server: 104.19.38.22
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 5|d*********g.com_4
+      network: ws
+      port: 2052
+      server: 172.64.175.98
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 5|d*********g.com_5
+      network: ws
+      port: 2052
+      server: 172.64.99.32
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 5|d*********g.com_6
+      network: ws
+      port: 2052
+      server: 104.19.21.81
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 5|d*********g.com_7
+      network: ws
+      port: 2052
+      server: 172.64.175.223
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 5|d*********g.com_8
+      network: ws
+      port: 2052
+      server: 172.64.198.229
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 5|d*********g.com_9
+      network: ws
+      port: 2052
+      server: 172.64.194.96
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 5|d*********g.com_10
+      network: ws
+      port: 2052
+      server: 104.19.21.73
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 5|d*********g.com_11
+      network: ws
+      port: 2052
+      server: 104.19.123.31
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 5|d*********g.com_12
+      network: ws
+      port: 2052
+      server: 104.18.57.121
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 5|d*********g.com_13
+      network: ws
+      port: 2052
+      server: 104.19.21.240
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 5|d*********g.com_14
+      network: ws
+      port: 2052
+      server: 104.19.21.220
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 5|d*********g.com_15
+      network: ws
+      port: 2052
+      server: 104.19.46.123
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 5|d*********g.com_16
+      network: ws
+      port: 2052
+      server: 104.19.32.226
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 5|d*********g.com_17
+      network: ws
+      port: 2052
+      server: 104.19.47.75
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 5|d*********g.com_18
+      network: ws
+      port: 2052
+      server: 104.19.58.185
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 5|d*********g.com_19
+      network: ws
+      port: 2052
+      server: 104.19.55.79
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 5|d*********g.com_20
+      network: ws
+      port: 2052
+      server: 104.19.42.79
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 5|d*********g.com_21
+      network: ws
+      port: 2052
+      server: 104.17.106.171
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 5|d*********g.com_22
+      network: ws
+      port: 2052
+      server: 104.19.57.24
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 5|d*********g.com_23
+      network: ws
+      port: 2052
+      server: 104.19.59.99
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 5|d*********g.com_29
+      network: ws
+      port: 2052
+      server: 104.20.17.196
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 5|d*********g.com_28
+      network: ws
+      port: 2052
+      server: 104.20.25.166
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 5|d*********g.com_26
+      network: ws
+      port: 2052
+      server: 104.20.25.176
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 5|d*********g.com_27
+      network: ws
+      port: 2052
+      server: 104.26.7.152
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: 5|d*********g.com_30
+      network: ws
+      port: 2052
+      server: 172.67.74.122
+      servername: cdn3.freegradely.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+      ws-opts:
+        headers:
+            Host: cdn3.freegradely.xyz
+        path: github.com/Alvin9999
+    - client-fingerprint: chrome
+      name: "\U0001F1ED\U0001F1F0 10,11|香港4|@ripaojiedian"
+      password: llyEnxJlVC
+      port: 51017
+      server: 183.232.139.24
+      skip-cert-verify: false
+      sni: 183.232.139.24
+      type: trojan
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: "\U0001F1ED\U0001F1F0 10|\U0001F1ED\U0001F1F0 香港|@ripaojiedian"
+      network: ws
+      port: 46001
+      server: mmhk01.micloud.buzz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: 638501f6-0ba0-47cb-bcfe-200cc1169e81
+      ws-opts:
+        headers:
+            Host: mmhk01.micloud.buzz
+        path: /zh-cn
+    - alterId: 64
+      cipher: auto
+      client-fingerprint: chrome
+      name: "\U0001F1ED\U0001F1F0 10|\U0001F1ED\U0001F1F0 香港5|@ripaojiedian"
+      port: 54104
+      server: 183.236.51.23
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    - client-fingerprint: chrome
+      name: "\U0001F1EF\U0001F1F5 10,11|日本|@ripaojiedian"
+      password: yEnxJlVC
+      port: 25560
+      server: 183.232.139.24
+      skip-cert-verify: false
+      sni: 183.232.139.24
+      type: trojan
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: "\U0001F1EF\U0001F1F5 10,11|日本2|@ripaojiedian"
+      network: ws
+      port: 80
+      server: cfcdn3.sanfencdn9.com
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: 823b4a45-8728-425b-abb4-2d9ea30fd61e
+      ws-opts:
+        headers:
+            Host: oA5FSz9Tjp1.yofnhkfc.xyz
+        path: /video/P7EExoE2
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: "\U0001F1EF\U0001F1F5 10|\U0001F1EF\U0001F1F5 日本3|@ripaojiedian"
+      network: ws
+      port: 46011
+      server: mmjp11.micloud.buzz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: 638501f6-0ba0-47cb-bcfe-200cc1169e81
+      ws-opts:
+        headers:
+            Host: mmjp11.micloud.buzz
+        path: /zh-cn
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: "\U0001F1F8\U0001F1EC 10|\U0001F1F8\U0001F1EC 新加坡|@ripaojiedian"
+      network: ws
+      port: 46016
+      server: mmsg16.micloud.buzz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: 638501f6-0ba0-47cb-bcfe-200cc1169e81
+      ws-opts:
+        headers:
+            Host: mmsg16.micloud.buzz
+        path: /zh-cn
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: "\U0001F1F8\U0001F1EC 10,11|新加坡2|@ripaojiedian"
+      network: ws
+      port: 2052
+      server: cfcdn2.sanfencdn9.com
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: 823b4a45-8728-425b-abb4-2d9ea30fd61e
+      ws-opts:
+        headers:
+            Host: jpafzyhfsg3.yofnhkfc.xyz
+        path: /video/u4eCZTxW
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 10,11|美国|@ripaojiedian"
+      network: ws
+      port: 2086
+      server: 104.19.51.232
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+      ws-opts:
+        headers:
+            Host: ip005.dtku47.xyz
+        path: github.com/Alvin9999
+    - client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 10,11|美国2|@ripaojiedian"
+      password: yEnxJlVC
+      port: 3464
+      server: 183.232.139.24
+      skip-cert-verify: false
+      sni: 183.232.139.24
+      type: trojan
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 10,11|美国3|@ripaojiedian"
+      network: ws
+      port: 2052
+      server: cfcdn1.sanfencdn9.com
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: 823b4a45-8728-425b-abb4-2d9ea30fd61e
+      ws-opts:
+        headers:
+            Host: us1cPZiz8nb.fzbqfrse.xyz
+        path: /video/6VBhAkCtV4/
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: "\U0001F1FA\U0001F1F8 10,11|美国5|@ripaojiedian"
+      network: ws
+      port: 2086
+      server: 104.26.0.56
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+      ws-opts:
+        headers:
+            Host: ip14.freegradely.xyz
+        path: github.com/Alvin9999
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: "\U0001F1ED\U0001F1F0 11|香港|@ripaojiedian"
+      network: ws
+      port: 46001
+      server: mmhk01.micloud.buzz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: 638501f6-0ba0-47cb-bcfe-200cc1169e81
+      ws-opts:
+        headers:
+            Host: mmhk01.micloud.buzz
+        path: /zh-cn
+    - alterId: 64
+      cipher: auto
+      client-fingerprint: chrome
+      name: "\U0001F1ED\U0001F1F0 11|香港5|@ripaojiedian"
+      port: 54104
+      server: 183.236.51.23
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: "\U0001F1EF\U0001F1F5 11|日本3|@ripaojiedian"
+      network: ws
+      port: 46011
+      server: mmjp11.micloud.buzz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: 638501f6-0ba0-47cb-bcfe-200cc1169e81
+      ws-opts:
+        headers:
+            Host: mmjp11.micloud.buzz
+        path: /zh-cn
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: "\U0001F1F8\U0001F1EC 11|新加坡|@ripaojiedian"
+      network: ws
+      port: 46016
+      server: mmsg16.micloud.buzz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vmess
+      uuid: 638501f6-0ba0-47cb-bcfe-200cc1169e81
+      ws-opts:
+        headers:
+            Host: mmsg16.micloud.buzz
+        path: /zh-cn
+    - client-fingerprint: chrome
+      name: 12|AE_speednode_0002
+      network: ws
+      port: 80
+      server: 94.140.0.0
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodesfp=chrome
+    - client-fingerprint: chrome
+      name: 12|AE_speednode_0003
+      network: ws
+      port: 443
+      server: 94.140.0.157
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /?ed=2048security=tls
+    - client-fingerprint: chrome
+      name: 12|AT_speednode_0004
+      network: ws
+      port: 130
+      server: 94.177.8.26
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: tg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|AT_speednode_0005
+      network: ws
+      port: 130
+      server: 94.177.8.26
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: /tg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|AU_speednode_0006
+      network: ws
+      port: 443
+      server: 103.169.142.121
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: /tg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|AU_speednode_0007
+      network: ws
+      port: 443
+      server: 103.169.142.78
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: /tg@zdyz2fp=chromefp=chrome
+    - client-fingerprint: chrome
+      name: 12|BG_speednode_0008
+      network: ws
+      port: 443
+      server: 147.78.140.5
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /?ed=2048security=tls
+    - client-fingerprint: chrome
+      name: 12|BG_speednode_0009
+      network: ws
+      port: 443
+      server: 147.78.140.10
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: tg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|BG_speednode_0010
+      network: ws
+      port: 443
+      server: 147.78.140.5
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /security=tls
+    - client-fingerprint: chrome
+      name: 12|CH_speednode_0014
+      network: ws
+      port: 80
+      server: 185.18.250.138
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodesfp=chrome
+    - client-fingerprint: chrome
+      name: 12|CO_speednode_0021
+      network: ws
+      port: 443
+      server: 91.195.110.135
+      servername: bia-2-vip-programs.hsjsak.ir
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: b8d718c6-7516-4259-b4e6-253e280bc6b6
+      ws-opts:
+        headers:
+            Host: bia-2-vip-programs.hsjsak.ir
+        path: /security=tls
+    - client-fingerprint: chrome
+      name: 12|DE_speednode_0022
+      network: ws
+      port: 443
+      server: 188.244.122.109
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: Twitterfreecodestg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0047
+      network: ws
+      port: 80
+      server: 45.80.110.41
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodesfp=chrome
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0025
+      network: ws
+      port: 80
+      server: 45.80.110.173
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodesfp=chrome
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0026
+      network: ws
+      port: 80
+      server: 45.80.110.245
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodesfp=chrome
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0032
+      network: ws
+      port: 80
+      server: 45.80.110.19
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodesfp=chrome
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0050
+      network: ws
+      port: 80
+      server: 45.80.110.209
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodesfp=chrome
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0044
+      network: ws
+      port: 80
+      server: 45.80.110.130
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodesfp=chrome
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0033
+      network: ws
+      port: 80
+      server: 45.80.110.231
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodesfp=chrome
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0031
+      network: ws
+      port: 80
+      server: 45.80.110.13
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodesfp=chrome
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0046
+      network: ws
+      port: 80
+      server: 45.80.110.175
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodesfp=chrome
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0035
+      network: ws
+      port: 80
+      server: 45.80.110.213
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodes
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0049
+      network: ws
+      port: 80
+      server: 45.80.110.161
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodesfp=chrome
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0037
+      network: ws
+      port: 80
+      server: 45.80.110.238
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodes
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0051
+      network: ws
+      port: 80
+      server: 45.80.110.201
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodesfp=chrome
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0039
+      network: ws
+      port: 80
+      server: 45.80.110.46
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodes
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0040
+      network: ws
+      port: 2083
+      server: 45.80.110.234
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodessecurity=tls
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0041
+      network: ws
+      port: 2053
+      server: 45.80.110.245
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodessecurity=tls
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0054
+      network: ws
+      port: 8443
+      server: 45.80.110.245
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: twitter苏小柠security=tls
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0060
+      network: ws
+      port: 2053
+      server: 45.80.110.230
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodessecurity=tls
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0045
+      network: ws
+      port: 2087
+      server: 45.80.110.130
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodessecurity=tls
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0065
+      network: ws
+      port: 8443
+      server: 45.80.110.13
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodessecurity=tls
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0053
+      network: ws
+      port: 443
+      server: 45.80.110.8
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodessecurity=tls
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0079
+      network: ws
+      port: 2053
+      server: 45.80.110.223
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodessecurity=tls
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0056
+      network: ws
+      port: 2053
+      server: 45.80.110.211
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: twitterfreecodesfp=chrome
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0057
+      network: ws
+      port: 8443
+      server: 45.80.110.12
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodessecurity=tls
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0058
+      network: ws
+      port: 8443
+      server: 45.80.110.212
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: twitterfreecodessecurity=tls
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0059
+      network: ws
+      port: 2053
+      server: 45.80.110.207
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: twitterfreecodesfp=chrome
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0061
+      network: ws
+      port: 2087
+      server: 45.80.110.215
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: twitterfreecodesfp=chrome
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0062
+      network: ws
+      port: 2087
+      server: 45.80.110.230
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: twitterfreecodesfp=chrome
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0063
+      network: ws
+      port: 8443
+      server: 45.80.110.203
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodessecurity=tls
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0064
+      network: ws
+      port: 8443
+      server: 45.80.110.43
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodessecurity=tls
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0066
+      network: ws
+      port: 2087
+      server: 45.80.110.96
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: twitterfreecodesfp=chrome
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0069
+      network: ws
+      port: 2053
+      server: 45.80.110.238
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: /security=tls
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0068
+      network: ws
+      port: 2087
+      server: 45.80.110.215
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodessecurity=tls
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0070
+      network: ws
+      port: 2087
+      server: 45.80.110.215
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: twitterfreecodesfp=chromefp=chrome
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0071
+      network: ws
+      port: 2053
+      server: 45.80.110.217
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodessecurity=tls
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0072
+      network: ws
+      port: 2087
+      server: 45.80.110.222
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: /security=tls
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0073
+      network: ws
+      port: 2087
+      server: 45.80.110.133
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: twitterfreecodesfp=chrome
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0074
+      network: ws
+      port: 2087
+      server: 45.80.110.241
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: twitterfreecodessecurity=tls
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0075
+      network: ws
+      port: 2087
+      server: 45.80.110.96
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: twitterfreecodesfp=chromefp=chrome
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0076
+      network: ws
+      port: 2087
+      server: 45.80.110.241
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodessecurity=tls
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0077
+      network: ws
+      port: 2087
+      server: 45.80.110.133
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: twitterfreecodesfp=chromefp=chrome
+    - client-fingerprint: chrome
+      name: 12|EE_speednode_0078
+      network: ws
+      port: 2087
+      server: 45.80.110.222
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: twitterfreecodessecurity=tls
+    - client-fingerprint: chrome
+      name: 12|ES_speednode_0080
+      network: ws
+      port: 443
+      server: 185.238.228.212
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /?ed=2048security=tls
+    - client-fingerprint: chrome
+      name: 12|FR_speednode_0082
+      network: ws
+      port: 80
+      server: 193.70.90.159
+      servername: vkvd127.mycdn.me
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f4859fc9-dc44-11ee-b9ba-00505603e70d
+      ws-opts:
+        headers:
+            Host: vkvd127.mycdn.me
+        path: /websocket
+    - client-fingerprint: chrome
+      name: 12|FR_speednode_0083
+      password: 2bf3db70-359e-11ef-93fe-1239d0255272
+      port: 443
+      server: fr1.test3.net
+      skip-cert-verify: false
+      sni: namasha.com
+      type: trojan
+    - client-fingerprint: chrome
+      name: 12|GB_speednode_0087
+      network: ws
+      port: 2096
+      server: 31.22.116.134
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /?ed=2048security=tls
+    - client-fingerprint: chrome
+      name: 12|GB_speednode_0088
+      network: ws
+      port: 2053
+      server: 91.193.58.119
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /?ed=2048security=tls
+    - client-fingerprint: chrome
+      name: 12|GB_speednode_0089
+      network: ws
+      port: 443
+      server: 31.22.116.159
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: tg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|GB_speednode_0090
+      network: ws
+      port: 443
+      server: 31.22.116.155
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: tg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|GB_speednode_0091
+      network: ws
+      port: 443
+      server: 94.247.142.241
+      servername: fq521.6789.cloudns.be
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 775213ac-3976-439a-8977-3277c0e4735d
+      ws-opts:
+        headers:
+            Host: fq521.6789.cloudns.be
+        path: Twitterfreecodessecurity=tls
+    - client-fingerprint: chrome
+      name: 12|GB_speednode_0092
+      network: ws
+      port: 443
+      server: 217.163.76.75
+      servername: mositr.freenods.sbs
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+      ws-opts:
+        headers:
+            Host: mositr.freenods.sbs
+        path: Twitterfreecodessecurity=tls
+    - client-fingerprint: chrome
+      name: 12|GB_speednode_0093
+      network: ws
+      port: 443
+      server: 217.163.76.75
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: tg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|GB_speednode_0094
+      network: ws
+      port: 443
+      server: 31.22.116.198
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: tg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|HK_speednode_0097
+      network: ws
+      port: 34237
+      server: 8.210.109.11
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: 7509f896-2115-4420-b487-501c9103bebd
+      ws-opts:
+        headers:
+            Host: ccs.443888.xyz
+        path: /vless?ed=2560fp=chrome
+    - client-fingerprint: chrome
+      name: 12|JP_speednode_0098
+      network: ws
+      port: 443
+      server: 43.153.181.217
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: /tg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|JP_speednode_0099
+      network: ws
+      port: 443
+      server: 43.153.181.217
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: Twitterfreecodestg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|KR_speednode_0100
+      network: ws
+      port: 443
+      server: 59.3.3.161
+      servername: page-us-qg0.pages.dev
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: bd7d2c5c-86bc-4d5c-8c6b-a5c58981e68c
+      ws-opts:
+        headers:
+            Host: page-us-qg0.pages.dev
+        path: /security=tls
+    - client-fingerprint: chrome
+      name: 12|KR_speednode_0101
+      network: ws
+      port: 18916
+      server: 49.165.150.206
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: Twitterfreecodestg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|KR_speednode_0102
+      network: ws
+      port: 18916
+      server: 49.165.150.206
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: /tg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|KR_speednode_0103
+      network: ws
+      port: 12371
+      server: 14.45.190.97
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: 7509f896-2115-4420-b487-501c9103bebd
+      ws-opts:
+        headers:
+            Host: ccs.443888.xyz
+        path: /vless?ed=2560fp=chrome
+    - client-fingerprint: chrome
+      name: 12|KR_speednode_0104
+      network: ws
+      port: 15800
+      server: 129.154.223.89
+      servername: dns68.putata.eu.org
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5
+      ws-opts:
+        headers:
+            Host: dns68.putata.eu.org
+        path: /?ed=2048fp=chrome
+    - client-fingerprint: chrome
+      name: 12|KR_speednode_0105
+      network: ws
+      port: 16575
+      server: 118.45.125.234
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: 7509f896-2115-4420-b487-501c9103bebd
+      ws-opts:
+        headers:
+            Host: ccs.443888.xyz
+        path: /vless?ed=2560fp=chrome
+    - client-fingerprint: chrome
+      name: 12|KR_speednode_0106
+      network: ws
+      port: 12245
+      server: 125.129.129.66
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: 7509f896-2115-4420-b487-501c9103bebd
+      ws-opts:
+        headers:
+            Host: ccs.443888.xyz
+        path: /vless?ed=2560fp=chrome
+    - client-fingerprint: chrome
+      name: 12|KR_speednode_0107
+      network: ws
+      port: 33185
+      server: 112.187.240.245
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: 7509f896-2115-4420-b487-501c9103bebd
+      ws-opts:
+        headers:
+            Host: ccs.443888.xyz
+        path: /vless?ed=2560fp=chrome
+    - client-fingerprint: chrome
+      grpc-opts:
+        grpc-service-name: Qqwetyioodaoajskxjfp=chrome
+      name: 12|KZ_speednode_0108
+      network: grpc
+      port: 2083
+      server: 194.76.18.0
+      servername: IrAn.HARchi.monsteR.
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: 83213e65-9a49-446a-a8ce-6eaa7f78d111
+    - client-fingerprint: chrome
+      grpc-opts:
+        grpc-service-name: Qqwetyioodaoajskxjfp=chrome
+      name: 12|KZ_speednode_0109
+      network: grpc
+      port: 2096
+      server: 194.76.18.0
+      servername: Iran.harchi.monster
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: 225e88f5-b289-42b8-9064-b7e51f241211
+    - client-fingerprint: chrome
+      grpc-opts:
+        grpc-service-name: Qqwetyioodaoajskxjfp=chrome
+      name: 12|KZ_speednode_0110
+      network: grpc
+      port: 2096
+      server: 194.76.18.22
+      servername: Iran.harchi.monster
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: 225e88f5-b289-42b8-9064-b7e51f241211
+    - client-fingerprint: chrome
+      name: 12|KZ_speednode_0111
+      network: ws
+      port: 443
+      server: 185.176.26.175
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: /tg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|LT_speednode_0112
+      network: ws
+      port: 443
+      server: 88.216.66.193
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /?ed=2048security=tls
+    - client-fingerprint: chrome
+      name: 12|LT_speednode_0113
+      network: ws
+      port: 2083
+      server: 89.116.250.6
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /fp=chrome
+    - client-fingerprint: chrome
+      name: 12|LU_speednode_0114
+      network: ws
+      port: 2053
+      server: 94.242.230.56
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /?ed=2048security=tls
+    - client-fingerprint: chrome
+      name: 12|LU_speednode_0115
+      network: ws
+      port: 443
+      server: 188.42.88.130
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /security=tls
+    - client-fingerprint: chrome
+      name: 12|LU_speednode_0116
+      network: ws
+      port: 443
+      server: 188.42.89.64
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: tg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|LU_speednode_0117
+      network: ws
+      port: 2053
+      server: 94.242.231.244
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /?ed=2048security=tls
+    - client-fingerprint: chrome
+      name: 12|RU_speednode_0126
+      network: ws
+      port: 8443
+      server: 188.42.145.159
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /?ed=2048security=tls
+    - client-fingerprint: chrome
+      name: 12|RU_speednode_0127
+      network: ws
+      port: 2096
+      server: 188.42.145.159
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /?ed=2048security=tls
+    - client-fingerprint: chrome
+      name: 12|RU_speednode_0128
+      network: ws
+      port: 2087
+      server: 185.176.24.140
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /?ed=2048security=tls
+    - client-fingerprint: chrome
+      name: 12|RU_speednode_0129
+      network: ws
+      port: 8443
+      server: 188.42.145.90
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /?edfp=chrome
+    - client-fingerprint: chrome
+      name: 12|RU_speednode_0130
+      network: ws
+      port: 443
+      server: 185.59.218.158
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: tg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|RU_speednode_0131
+      network: ws
+      port: 443
+      server: 188.42.145.159
+      servername: VIrgiNiavPn-nL.pagEs.dEv
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 54ef4ecf-ff37-436a-be13-95c8a8a1114d
+      ws-opts:
+        headers:
+            Host: VIrgiNiavPn-nL.pagEs.dEv
+        path: /security=tls
+    - client-fingerprint: chrome
+      name: 12|RU_speednode_0132
+      network: ws
+      port: 443
+      server: 185.176.24.120
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: tg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|RU_speednode_0133
+      network: ws
+      port: 443
+      server: 185.109.21.19
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: /tg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|RU_speednode_0134
+      network: ws
+      port: 8443
+      server: 188.42.145.159
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: tg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|RU_speednode_0135
+      network: ws
+      port: 443
+      server: 185.59.218.0
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: tg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|RU_speednode_0136
+      network: ws
+      port: 8443
+      server: 188.42.145.90
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /?edfp=chromefp=chrome
+    - client-fingerprint: chrome
+      name: 12|RU_speednode_0137
+      network: ws
+      port: 443
+      server: 212.41.15.119
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /security=tls
+    - client-fingerprint: chrome
+      name: 12|RU_speednode_0138
+      network: ws
+      port: 443
+      server: 185.59.218.144
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: tg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|RU_speednode_0139
+      network: ws
+      port: 443
+      server: 188.42.145.140
+      servername: g1.youyuan.us.kg
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: f3fcb0be-c785-4791-bd88-335dd20f0c1e
+      ws-opts:
+        headers:
+            Host: g1.youyuan.us.kg
+        path: /?proxyip=proxyip.multacom.fxxk.dedyn.iofp=chrome
+    - client-fingerprint: chrome
+      name: 12|RU_speednode_0140
+      network: ws
+      port: 443
+      server: 185.176.24.71
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: tg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|RU_speednode_0141
+      network: ws
+      port: 443
+      server: 188.42.145.140
+      servername: g1.youyuan.us.kg
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: f3fcb0be-c785-4791-bd88-335dd20f0c1e
+      ws-opts:
+        headers:
+            Host: g1.youyuan.us.kg
+        path: /?proxyip=proxyip.multacom.fxxk.dedyn.iofp=chromefp=chrome
+    - client-fingerprint: chrome
+      name: 12|SC_speednode_0143
+      network: ws
+      port: 2053
+      server: 154.197.88.97
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /?ed=2048security=tls
+    - client-fingerprint: chrome
+      name: 12|SC_speednode_0144
+      network: ws
+      password: moist
+      port: 443
+      server: 154.197.121.127
+      skip-cert-verify: false
+      sni: trojan.freenods.sbs
+      type: trojan
+      ws-opts:
+        headers:
+            Host: trojan.freenods.sbs
+        path: /
+    - client-fingerprint: chrome
+      name: 12|SC_speednode_0145
+      network: ws
+      port: 2083
+      server: 45.133.247.90
+      servername: t-netplus1.pages.dev
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 9af577f2-0a7a-4448-ae0b-6985c53ea634
+      ws-opts:
+        headers:
+            Host: t-netplus1.pages.dev
+        path: /security=tls
+    - client-fingerprint: chrome
+      name: 12|SC_speednode_0146
+      network: ws
+      port: 443
+      server: 45.133.247.151
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /?ed=2048security=tls
+    - client-fingerprint: chrome
+      name: 12|SE_speednode_0149
+      network: ws
+      port: 443
+      server: 185.146.173.32
+      servername: e10c0e4b.oodaeq2.pages.dev
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: d7bbfe83-b037-48ae-996c-b98ed0441ba2
+      ws-opts:
+        headers:
+            Host: e10c0e4b.oodaeq2.pages.dev
+        path: /tel.icv2ray.spacefp=chrome
+    - client-fingerprint: chrome
+      name: 12|SE_speednode_0148
+      network: ws
+      port: 443
+      server: 185.146.173.32
+      servername: e10c0e4b.oodaeq2.pages.dev
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: d7bbfe83-b037-48ae-996c-b98ed0441ba2
+      ws-opts:
+        headers:
+            Host: e10c0e4b.oodaeq2.pages.dev
+        path: /tel.icv2ray.spacefp=chromefp=chrome
+    - client-fingerprint: chrome
+      name: 12|SE_speednode_0150
+      network: ws
+      port: 80
+      server: 185.146.173.94
+      servername: ch1.vless.site
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f935b2d4-229d-5f73-bc99-fdb3a8b48088
+      ws-opts:
+        headers:
+            Host: ch1.vless.site
+        path: /vlessfp=chrome
+    - client-fingerprint: chrome
+      name: 12|SG_speednode_0151
+      network: ws
+      port: 2087
+      server: 47.236.10.182
+      servername: mositr.freenods.sbs
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+      ws-opts:
+        headers:
+            Host: mositr.freenods.sbs
+        path: /?ed=2560fp=random
+    - client-fingerprint: chrome
+      name: 12|SG_speednode_0153
+      network: ws
+      port: 2083
+      server: 47.236.232.148
+      servername: go.jp980.cloudns.org
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
+      ws-opts:
+        headers:
+            Host: go.jp980.cloudns.org
+        path: /?ed=2560security=tls
+    - client-fingerprint: chrome
+      name: 12|SG_speednode_0154
+      network: ws
+      port: 443
+      server: 47.236.130.95
+      servername: page-us-qg0.pages.dev
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: bd7d2c5c-86bc-4d5c-8c6b-a5c58981e68c
+      ws-opts:
+        headers:
+            Host: page-us-qg0.pages.dev
+        path: /security=tls
+    - client-fingerprint: chrome
+      name: 12|SG_speednode_0155
+      network: ws
+      port: 2096
+      server: 47.236.202.91
+      servername: page-us-qg0.pages.dev
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: bd7d2c5c-86bc-4d5c-8c6b-a5c58981e68c
+      ws-opts:
+        headers:
+            Host: page-us-qg0.pages.dev
+        path: /security=tls
+    - client-fingerprint: chrome
+      name: 12|SG_speednode_0156
+      network: ws
+      port: 2087
+      server: 47.236.10.182
+      servername: mositr.freenods.sbs
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: 678ac895-92c2-4f27-a9d4-f1a89c5f5365
+      ws-opts:
+        headers:
+            Host: mositr.freenods.sbs
+        path: /?ed=2560fp=randomfp=chrome
+    - client-fingerprint: chrome
+      name: 12|SG_speednode_0157
+      network: ws
+      port: 443
+      server: 27.50.49.13
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /?ed=2048security=tls
+    - client-fingerprint: chrome
+      name: 12|SG_speednode_0158
+      network: ws
+      port: 443
+      server: 27.50.48.222
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /?ed=2048security=tls
+    - client-fingerprint: chrome
+      name: 12|SG_speednode_0159
+      network: ws
+      password: moist
+      port: 443
+      server: 27.50.48.108
+      skip-cert-verify: false
+      sni: trojan.freenods.sbs
+      type: trojan
+      ws-opts:
+        headers:
+            Host: trojan.freenods.sbs
+        path: /
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0161
+      network: ws
+      port: 80
+      server: 185.148.104.199
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodes
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0172
+      network: ws
+      port: 443
+      server: 199.181.197.39
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /?ed=2048security=tls
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0183
+      network: ws
+      port: 80
+      server: 204.93.210.226
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodesfp=chrome
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0164
+      network: ws
+      port: 28555
+      server: 38.59.244.77
+      servername: go.jp980.cloudns.org
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
+      ws-opts:
+        headers:
+            Host: go.jp980.cloudns.org
+        path: /?ed=2560security=tls
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0189
+      network: ws
+      port: 80
+      server: 204.93.210.208
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodesfp=chrome
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0185
+      network: ws
+      port: 2083
+      server: 216.205.52.109
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /?ed=2048security=tls
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0168
+      network: ws
+      port: 443
+      server: 43.153.103.203
+      servername: go.jp980.cloudns.org
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: b9011be4-b7d5-428e-a4cc-be5cc8768ba4
+      ws-opts:
+        headers:
+            Host: go.jp980.cloudns.org
+        path: /?ed=2560security=tls
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0173
+      network: ws
+      port: 2096
+      server: 14.102.228.210
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /?ed=2048security=tls
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0170
+      network: ws
+      port: 8443
+      server: 66.235.200.1
+      servername: 698Aa4AA.Swz-UUz-316.PageS.Dev
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+      ws-opts:
+        headers:
+            Host: 698Aa4AA.Swz-UUz-316.PageS.Dev
+        path: /fp=chrome
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0175
+      network: ws
+      port: 2053
+      server: 216.116.134.43
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /?ed=2048security=tls
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0176
+      network: ws
+      port: 443
+      server: 167.68.11.247
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: tg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0177
+      network: ws
+      port: 443
+      server: 155.46.213.32
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: /tg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0178
+      network: ws
+      port: 8443
+      server: 185.148.105.225
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /?ed=2048security=tls
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0179
+      network: ws
+      port: 2053
+      server: 130.250.137.196
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodessecurity=tls
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0203
+      network: ws
+      port: 2087
+      server: 14.102.229.66
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /security=tls
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0182
+      network: ws
+      port: 80
+      server: 204.93.210.116
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodes
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0184
+      network: ws
+      port: 443
+      server: 159.112.235.90
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /security=tls
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0187
+      network: ws
+      port: 8443
+      server: 89.116.161.250
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: tg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0188
+      network: ws
+      port: 80
+      server: 204.93.210.46
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodes
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0190
+      network: ws
+      port: 80
+      server: 45.159.216.99
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: Twitterfreecodesfp=chrome
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0191
+      network: ws
+      port: 2053
+      server: 130.250.137.196
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /security=tls
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0192
+      network: ws
+      port: 443
+      server: 66.81.247.244
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: tg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0193
+      network: ws
+      port: 2083
+      server: 66.81.247.19
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: twitter苏小柠security=tls
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0194
+      network: ws
+      port: 8443
+      server: 204.93.210.185
+      servername: a.ssll.gay
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+      ws-opts:
+        headers:
+            Host: a.ssll.gay
+        path: twitterfreecodessecurity=tls
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0195
+      network: ws
+      port: 443
+      server: 167.68.11.106
+      servername: juzibaipiao.5112233.xyz
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+      ws-opts:
+        headers:
+            Host: juzibaipiao.5112233.xyz
+        path: /security=tls
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0196
+      network: ws
+      port: 443
+      server: 167.68.11.191
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: tg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0200
+      network: ws
+      port: 8443
+      server: 89.116.161.250
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: /tg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0201
+      network: ws
+      port: 8443
+      server: 66.235.200.1
+      servername: 698Aa4AA.Swz-UUz-316.PageS.Dev
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+      ws-opts:
+        headers:
+            Host: 698Aa4AA.Swz-UUz-316.PageS.Dev
+        path: /fp=chromefp=chrome
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0204
+      network: ws
+      port: 443
+      server: 167.68.11.106
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: false
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: tg@zdyz2security=tls
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0205
+      network: ws
+      port: 8443
+      server: 192.9.246.112
+      servername: 159d770e-fd74-4069-a73b-fe6ececa7951.f82aee4c-752c-4b0c-9793-380d4d76435c.ddnsgeek.com
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: d6b3de64-f0f8-4113-b49f-2660f3c031fb
+      ws-opts:
+        headers:
+            Host: 159d770e-fd74-4069-a73b-fe6ececa7951.f82aee4c-752c-4b0c-9793-380d4d76435c.ddnsgeek.com
+        path: /fylink.pages.dev/proxyipfp=chromefp=chrome
+    - client-fingerprint: chrome
+      name: 12|US_speednode_0209
+      network: ws
+      port: 443
+      server: 167.68.11.95
+      servername: cfed.tgzdyz2.top
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+      ws-opts:
+        headers:
+            Host: cfed.tgzdyz2.top
+        path: tg@zdyz2fp=chromefp=chrome
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      name: '13|d*********g.com_2 #4'
+      port: 443
+      server: 42.236.73.72
+      servername: www.zitian.cn
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vmess
+      uuid: 044f0177-0675-4dcf-89d4-804b6788e518
+    - client-fingerprint: chrome
+      name: proxy-206
+      password: fuck
+      port: 443
+      server: 42.236.73.72
+      skip-cert-verify: false
+      sni: www.zitian.cn
+      type: trojan
+proxy-groups:
+    - name: 节点选择
+      proxies:
+        - 2|d*********g.com_0
+        - 2|d*********g.com_1
+        - 2|d*********g.com_2
+        - 2|d*********g.com_3
+        - '3|d*********g.com_0 #1'
+        - '3|d*********g.com_1 #1'
+        - '3|d*********g.com_2 #1'
+        - '3|d*********g.com_3 #1'
+        - '4|d*********g.com_0 #2'
+        - '4|d*********g.com_1 #2'
+        - '4|d*********g.com_2 #2'
+        - '4|d*********g.com_3 #2'
+        - '5|d*********g.com_0 #3'
+        - '5|d*********g.com_1 #3'
+        - '5|d*********g.com_2 #3'
+        - '5|d*********g.com_3 #3'
+        - 5|d*********g.com_4
+        - 5|d*********g.com_5
+        - 5|d*********g.com_6
+        - 5|d*********g.com_7
+        - 5|d*********g.com_8
+        - 5|d*********g.com_9
+        - 5|d*********g.com_10
+        - 5|d*********g.com_11
+        - 5|d*********g.com_12
+        - 5|d*********g.com_13
+        - 5|d*********g.com_14
+        - 5|d*********g.com_15
+        - 5|d*********g.com_16
+        - 5|d*********g.com_17
+        - 5|d*********g.com_18
+        - 5|d*********g.com_19
+        - 5|d*********g.com_20
+        - 5|d*********g.com_21
+        - 5|d*********g.com_22
+        - 5|d*********g.com_23
+        - 5|d*********g.com_29
+        - 5|d*********g.com_28
+        - 5|d*********g.com_26
+        - 5|d*********g.com_27
+        - 5|d*********g.com_30
+        - "\U0001F1ED\U0001F1F0 10,11|香港4|@ripaojiedian"
+        - "\U0001F1ED\U0001F1F0 10|\U0001F1ED\U0001F1F0 香港|@ripaojiedian"
+        - "\U0001F1ED\U0001F1F0 10|\U0001F1ED\U0001F1F0 香港5|@ripaojiedian"
+        - "\U0001F1EF\U0001F1F5 10,11|日本|@ripaojiedian"
+        - "\U0001F1EF\U0001F1F5 10,11|日本2|@ripaojiedian"
+        - "\U0001F1EF\U0001F1F5 10|\U0001F1EF\U0001F1F5 日本3|@ripaojiedian"
+        - "\U0001F1F8\U0001F1EC 10|\U0001F1F8\U0001F1EC 新加坡|@ripaojiedian"
+        - "\U0001F1F8\U0001F1EC 10,11|新加坡2|@ripaojiedian"
+        - "\U0001F1FA\U0001F1F8 10,11|美国|@ripaojiedian"
+        - "\U0001F1FA\U0001F1F8 10,11|美国2|@ripaojiedian"
+        - "\U0001F1FA\U0001F1F8 10,11|美国3|@ripaojiedian"
+        - "\U0001F1FA\U0001F1F8 10,11|美国5|@ripaojiedian"
+        - "\U0001F1ED\U0001F1F0 11|香港|@ripaojiedian"
+        - "\U0001F1ED\U0001F1F0 11|香港5|@ripaojiedian"
+        - "\U0001F1EF\U0001F1F5 11|日本3|@ripaojiedian"
+        - "\U0001F1F8\U0001F1EC 11|新加坡|@ripaojiedian"
+        - 12|AE_speednode_0002
+        - 12|AE_speednode_0003
+        - 12|AT_speednode_0004
+        - 12|AT_speednode_0005
+        - 12|AU_speednode_0006
+        - 12|AU_speednode_0007
+        - 12|BG_speednode_0008
+        - 12|BG_speednode_0009
+        - 12|BG_speednode_0010
+        - 12|CH_speednode_0014
+        - 12|CO_speednode_0021
+        - 12|DE_speednode_0022
+        - 12|EE_speednode_0047
+        - 12|EE_speednode_0025
+        - 12|EE_speednode_0026
+        - 12|EE_speednode_0032
+        - 12|EE_speednode_0050
+        - 12|EE_speednode_0044
+        - 12|EE_speednode_0033
+        - 12|EE_speednode_0031
+        - 12|EE_speednode_0046
+        - 12|EE_speednode_0035
+        - 12|EE_speednode_0049
+        - 12|EE_speednode_0037
+        - 12|EE_speednode_0051
+        - 12|EE_speednode_0039
+        - 12|EE_speednode_0040
+        - 12|EE_speednode_0041
+        - 12|EE_speednode_0054
+        - 12|EE_speednode_0060
+        - 12|EE_speednode_0045
+        - 12|EE_speednode_0065
+        - 12|EE_speednode_0053
+        - 12|EE_speednode_0079
+        - 12|EE_speednode_0056
+        - 12|EE_speednode_0057
+        - 12|EE_speednode_0058
+        - 12|EE_speednode_0059
+        - 12|EE_speednode_0061
+        - 12|EE_speednode_0062
+        - 12|EE_speednode_0063
+        - 12|EE_speednode_0064
+        - 12|EE_speednode_0066
+        - 12|EE_speednode_0069
+        - 12|EE_speednode_0068
+        - 12|EE_speednode_0070
+        - 12|EE_speednode_0071
+        - 12|EE_speednode_0072
+        - 12|EE_speednode_0073
+        - 12|EE_speednode_0074
+        - 12|EE_speednode_0075
+        - 12|EE_speednode_0076
+        - 12|EE_speednode_0077
+        - 12|EE_speednode_0078
+        - 12|ES_speednode_0080
+        - 12|FR_speednode_0082
+        - 12|FR_speednode_0083
+        - 12|GB_speednode_0087
+        - 12|GB_speednode_0088
+        - 12|GB_speednode_0089
+        - 12|GB_speednode_0090
+        - 12|GB_speednode_0091
+        - 12|GB_speednode_0092
+        - 12|GB_speednode_0093
+        - 12|GB_speednode_0094
+        - 12|HK_speednode_0097
+        - 12|JP_speednode_0098
+        - 12|JP_speednode_0099
+        - 12|KR_speednode_0100
+        - 12|KR_speednode_0101
+        - 12|KR_speednode_0102
+        - 12|KR_speednode_0103
+        - 12|KR_speednode_0104
+        - 12|KR_speednode_0105
+        - 12|KR_speednode_0106
+        - 12|KR_speednode_0107
+        - 12|KZ_speednode_0108
+        - 12|KZ_speednode_0109
+        - 12|KZ_speednode_0110
+        - 12|KZ_speednode_0111
+        - 12|LT_speednode_0112
+        - 12|LT_speednode_0113
+        - 12|LU_speednode_0114
+        - 12|LU_speednode_0115
+        - 12|LU_speednode_0116
+        - 12|LU_speednode_0117
+        - 12|RU_speednode_0126
+        - 12|RU_speednode_0127
+        - 12|RU_speednode_0128
+        - 12|RU_speednode_0129
+        - 12|RU_speednode_0130
+        - 12|RU_speednode_0131
+        - 12|RU_speednode_0132
+        - 12|RU_speednode_0133
+        - 12|RU_speednode_0134
+        - 12|RU_speednode_0135
+        - 12|RU_speednode_0136
+        - 12|RU_speednode_0137
+        - 12|RU_speednode_0138
+        - 12|RU_speednode_0139
+        - 12|RU_speednode_0140
+        - 12|RU_speednode_0141
+        - 12|SC_speednode_0143
+        - 12|SC_speednode_0144
+        - 12|SC_speednode_0145
+        - 12|SC_speednode_0146
+        - 12|SE_speednode_0149
+        - 12|SE_speednode_0148
+        - 12|SE_speednode_0150
+        - 12|SG_speednode_0151
+        - 12|SG_speednode_0153
+        - 12|SG_speednode_0154
+        - 12|SG_speednode_0155
+        - 12|SG_speednode_0156
+        - 12|SG_speednode_0157
+        - 12|SG_speednode_0158
+        - 12|SG_speednode_0159
+        - 12|US_speednode_0161
+        - 12|US_speednode_0172
+        - 12|US_speednode_0183
+        - 12|US_speednode_0164
+        - 12|US_speednode_0189
+        - 12|US_speednode_0185
+        - 12|US_speednode_0168
+        - 12|US_speednode_0173
+        - 12|US_speednode_0170
+        - 12|US_speednode_0175
+        - 12|US_speednode_0176
+        - 12|US_speednode_0177
+        - 12|US_speednode_0178
+        - 12|US_speednode_0179
+        - 12|US_speednode_0203
+        - 12|US_speednode_0182
+        - 12|US_speednode_0184
+        - 12|US_speednode_0187
+        - 12|US_speednode_0188
+        - 12|US_speednode_0190
+        - 12|US_speednode_0191
+        - 12|US_speednode_0192
+        - 12|US_speednode_0193
+        - 12|US_speednode_0194
+        - 12|US_speednode_0195
+        - 12|US_speednode_0196
+        - 12|US_speednode_0200
+        - 12|US_speednode_0201
+        - 12|US_speednode_0204
+        - 12|US_speednode_0205
+        - 12|US_speednode_0209
+        - '13|d*********g.com_2 #4'
+        - proxy-206
+      type: select
+    - interval: 300
+      name: 自动选择
+      proxies:
+        - 2|d*********g.com_0
+        - 2|d*********g.com_1
+        - 2|d*********g.com_2
+        - 2|d*********g.com_3
+        - '3|d*********g.com_0 #1'
+        - '3|d*********g.com_1 #1'
+        - '3|d*********g.com_2 #1'
+        - '3|d*********g.com_3 #1'
+        - '4|d*********g.com_0 #2'
+        - '4|d*********g.com_1 #2'
+        - '4|d*********g.com_2 #2'
+        - '4|d*********g.com_3 #2'
+        - '5|d*********g.com_0 #3'
+        - '5|d*********g.com_1 #3'
+        - '5|d*********g.com_2 #3'
+        - '5|d*********g.com_3 #3'
+        - 5|d*********g.com_4
+        - 5|d*********g.com_5
+        - 5|d*********g.com_6
+        - 5|d*********g.com_7
+        - 5|d*********g.com_8
+        - 5|d*********g.com_9
+        - 5|d*********g.com_10
+        - 5|d*********g.com_11
+        - 5|d*********g.com_12
+        - 5|d*********g.com_13
+        - 5|d*********g.com_14
+        - 5|d*********g.com_15
+        - 5|d*********g.com_16
+        - 5|d*********g.com_17
+        - 5|d*********g.com_18
+        - 5|d*********g.com_19
+        - 5|d*********g.com_20
+        - 5|d*********g.com_21
+        - 5|d*********g.com_22
+        - 5|d*********g.com_23
+        - 5|d*********g.com_29
+        - 5|d*********g.com_28
+        - 5|d*********g.com_26
+        - 5|d*********g.com_27
+        - 5|d*********g.com_30
+        - "\U0001F1ED\U0001F1F0 10,11|香港4|@ripaojiedian"
+        - "\U0001F1ED\U0001F1F0 10|\U0001F1ED\U0001F1F0 香港|@ripaojiedian"
+        - "\U0001F1ED\U0001F1F0 10|\U0001F1ED\U0001F1F0 香港5|@ripaojiedian"
+        - "\U0001F1EF\U0001F1F5 10,11|日本|@ripaojiedian"
+        - "\U0001F1EF\U0001F1F5 10,11|日本2|@ripaojiedian"
+        - "\U0001F1EF\U0001F1F5 10|\U0001F1EF\U0001F1F5 日本3|@ripaojiedian"
+        - "\U0001F1F8\U0001F1EC 10|\U0001F1F8\U0001F1EC 新加坡|@ripaojiedian"
+        - "\U0001F1F8\U0001F1EC 10,11|新加坡2|@ripaojiedian"
+        - "\U0001F1FA\U0001F1F8 10,11|美国|@ripaojiedian"
+        - "\U0001F1FA\U0001F1F8 10,11|美国2|@ripaojiedian"
+        - "\U0001F1FA\U0001F1F8 10,11|美国3|@ripaojiedian"
+        - "\U0001F1FA\U0001F1F8 10,11|美国5|@ripaojiedian"
+        - "\U0001F1ED\U0001F1F0 11|香港|@ripaojiedian"
+        - "\U0001F1ED\U0001F1F0 11|香港5|@ripaojiedian"
+        - "\U0001F1EF\U0001F1F5 11|日本3|@ripaojiedian"
+        - "\U0001F1F8\U0001F1EC 11|新加坡|@ripaojiedian"
+        - 12|AE_speednode_0002
+        - 12|AE_speednode_0003
+        - 12|AT_speednode_0004
+        - 12|AT_speednode_0005
+        - 12|AU_speednode_0006
+        - 12|AU_speednode_0007
+        - 12|BG_speednode_0008
+        - 12|BG_speednode_0009
+        - 12|BG_speednode_0010
+        - 12|CH_speednode_0014
+        - 12|CO_speednode_0021
+        - 12|DE_speednode_0022
+        - 12|EE_speednode_0047
+        - 12|EE_speednode_0025
+        - 12|EE_speednode_0026
+        - 12|EE_speednode_0032
+        - 12|EE_speednode_0050
+        - 12|EE_speednode_0044
+        - 12|EE_speednode_0033
+        - 12|EE_speednode_0031
+        - 12|EE_speednode_0046
+        - 12|EE_speednode_0035
+        - 12|EE_speednode_0049
+        - 12|EE_speednode_0037
+        - 12|EE_speednode_0051
+        - 12|EE_speednode_0039
+        - 12|EE_speednode_0040
+        - 12|EE_speednode_0041
+        - 12|EE_speednode_0054
+        - 12|EE_speednode_0060
+        - 12|EE_speednode_0045
+        - 12|EE_speednode_0065
+        - 12|EE_speednode_0053
+        - 12|EE_speednode_0079
+        - 12|EE_speednode_0056
+        - 12|EE_speednode_0057
+        - 12|EE_speednode_0058
+        - 12|EE_speednode_0059
+        - 12|EE_speednode_0061
+        - 12|EE_speednode_0062
+        - 12|EE_speednode_0063
+        - 12|EE_speednode_0064
+        - 12|EE_speednode_0066
+        - 12|EE_speednode_0069
+        - 12|EE_speednode_0068
+        - 12|EE_speednode_0070
+        - 12|EE_speednode_0071
+        - 12|EE_speednode_0072
+        - 12|EE_speednode_0073
+        - 12|EE_speednode_0074
+        - 12|EE_speednode_0075
+        - 12|EE_speednode_0076
+        - 12|EE_speednode_0077
+        - 12|EE_speednode_0078
+        - 12|ES_speednode_0080
+        - 12|FR_speednode_0082
+        - 12|FR_speednode_0083
+        - 12|GB_speednode_0087
+        - 12|GB_speednode_0088
+        - 12|GB_speednode_0089
+        - 12|GB_speednode_0090
+        - 12|GB_speednode_0091
+        - 12|GB_speednode_0092
+        - 12|GB_speednode_0093
+        - 12|GB_speednode_0094
+        - 12|HK_speednode_0097
+        - 12|JP_speednode_0098
+        - 12|JP_speednode_0099
+        - 12|KR_speednode_0100
+        - 12|KR_speednode_0101
+        - 12|KR_speednode_0102
+        - 12|KR_speednode_0103
+        - 12|KR_speednode_0104
+        - 12|KR_speednode_0105
+        - 12|KR_speednode_0106
+        - 12|KR_speednode_0107
+        - 12|KZ_speednode_0108
+        - 12|KZ_speednode_0109
+        - 12|KZ_speednode_0110
+        - 12|KZ_speednode_0111
+        - 12|LT_speednode_0112
+        - 12|LT_speednode_0113
+        - 12|LU_speednode_0114
+        - 12|LU_speednode_0115
+        - 12|LU_speednode_0116
+        - 12|LU_speednode_0117
+        - 12|RU_speednode_0126
+        - 12|RU_speednode_0127
+        - 12|RU_speednode_0128
+        - 12|RU_speednode_0129
+        - 12|RU_speednode_0130
+        - 12|RU_speednode_0131
+        - 12|RU_speednode_0132
+        - 12|RU_speednode_0133
+        - 12|RU_speednode_0134
+        - 12|RU_speednode_0135
+        - 12|RU_speednode_0136
+        - 12|RU_speednode_0137
+        - 12|RU_speednode_0138
+        - 12|RU_speednode_0139
+        - 12|RU_speednode_0140
+        - 12|RU_speednode_0141
+        - 12|SC_speednode_0143
+        - 12|SC_speednode_0144
+        - 12|SC_speednode_0145
+        - 12|SC_speednode_0146
+        - 12|SE_speednode_0149
+        - 12|SE_speednode_0148
+        - 12|SE_speednode_0150
+        - 12|SG_speednode_0151
+        - 12|SG_speednode_0153
+        - 12|SG_speednode_0154
+        - 12|SG_speednode_0155
+        - 12|SG_speednode_0156
+        - 12|SG_speednode_0157
+        - 12|SG_speednode_0158
+        - 12|SG_speednode_0159
+        - 12|US_speednode_0161
+        - 12|US_speednode_0172
+        - 12|US_speednode_0183
+        - 12|US_speednode_0164
+        - 12|US_speednode_0189
+        - 12|US_speednode_0185
+        - 12|US_speednode_0168
+        - 12|US_speednode_0173
+        - 12|US_speednode_0170
+        - 12|US_speednode_0175
+        - 12|US_speednode_0176
+        - 12|US_speednode_0177
+        - 12|US_speednode_0178
+        - 12|US_speednode_0179
+        - 12|US_speednode_0203
+        - 12|US_speednode_0182
+        - 12|US_speednode_0184
+        - 12|US_speednode_0187
+        - 12|US_speednode_0188
+        - 12|US_speednode_0190
+        - 12|US_speednode_0191
+        - 12|US_speednode_0192
+        - 12|US_speednode_0193
+        - 12|US_speednode_0194
+        - 12|US_speednode_0195
+        - 12|US_speednode_0196
+        - 12|US_speednode_0200
+        - 12|US_speednode_0201
+        - 12|US_speednode_0204
+        - 12|US_speednode_0205
+        - 12|US_speednode_0209
+        - '13|d*********g.com_2 #4'
+        - proxy-206
+      tolerance: 50
+      type: url-test
+      url: http://www.gstatic.com/generate_204
+    - name: 国外通用
+      proxies:
+        - 节点选择
+        - 自动选择
+        - 全球直连
+      type: select
+    - name: 全球直连
+      proxies:
+        - DIRECT
+        - 节点选择
+        - 自动选择
+      type: select
+    - name: 全球拦截
+      proxies:
+        - REJECT
+        - DIRECT
+      type: select
+    - name: 漏网之鱼
+      proxies:
+        - 节点选择
+        - 全球直连
+        - 自动选择
+      type: select
+redir-port: 7892
+rule-providers:
+    Rule-provider-custom-tiz:
+        behavior: domain
+        format: text
+        interval: 86400
+        path: ./rule_provider/Rule-provider-custom-tiz.yaml
+        type: http
+        url: https://git.heheda.vip/root/clash-rule-provider/raw/master/custom-tizi.txt
+    apple:
+        behavior: domain
+        interval: 86400
+        path: ./rule_provider/apple.yaml
+        type: http
+        url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt
+    applications:
+        behavior: classical
+        interval: 86400
+        path: ./rule_provider/applications.yaml
+        type: http
+        url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt
+    cncidr:
+        behavior: ipcidr
+        interval: 86400
+        path: ./rule_provider/cncidr.yaml
+        type: http
+        url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt
+    direct:
+        behavior: domain
+        interval: 86400
+        path: ./rule_provider/direct.yaml
+        type: http
+        url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt
+    gfw:
+        behavior: domain
+        interval: 86400
+        path: ./rule_provider/gfw.yaml
+        type: http
+        url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt
+    google:
+        behavior: domain
+        interval: 86400
+        path: ./rule_provider/google.yaml
+        type: http
+        url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt
+    icloud:
+        behavior: domain
+        interval: 86400
+        path: ./rule_provider/icloud.yaml
+        type: http
+        url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt
+    lancidr:
+        behavior: ipcidr
+        interval: 86400
+        path: ./rule_provider/lancidr.yaml
+        type: http
+        url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt
+    private:
+        behavior: domain
+        interval: 86400
+        path: ./rule_provider/private.yaml
+        type: http
+        url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt
+    proxy:
+        behavior: domain
+        interval: 86400
+        path: ./rule_provider/proxy.yaml
+        type: http
+        url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt
+    reject:
+        behavior: domain
+        interval: 86400
+        path: ./rule_provider/reject.yaml
+        type: http
+        url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
+    telegramcidr:
+        behavior: ipcidr
+        interval: 86400
+        path: ./rule_provider/telegramcidr.yaml
+        type: http
+        url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt
+    tld-not-cn:
+        behavior: domain
+        interval: 86400
+        path: ./rule_provider/tld-not-cn.yaml
+        type: http
+        url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt
+rules:
+    - DST-PORT,7895,REJECT
+    - DST-PORT,7892,REJECT
+    - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
+    - RULE-SET,Rule-provider-custom-tiz,节点选择
+    - RULE-SET,applications,全球直连
+    - RULE-SET,private,全球直连
+    - RULE-SET,reject,全球拦截
+    - RULE-SET,icloud,全球直连
+    - RULE-SET,apple,全球直连
+    - RULE-SET,google,国外通用
+    - RULE-SET,proxy,国外通用
+    - RULE-SET,direct,全球直连
+    - RULE-SET,lancidr,全球直连,no-resolve
+    - RULE-SET,cncidr,全球直连,no-resolve
+    - RULE-SET,telegramcidr,国外通用
+    - GEOIP,LAN,全球直连
+    - DOMAIN-SUFFIX,itv.lat,全球直连,no-resolve
+    - DOMAIN-SUFFIX,pi.0472.org,全球直连,no-resolve
+    - DOMAIN-SUFFIX,acl4.ssr,全球直连
+    - DOMAIN-SUFFIX,ip6-localhost,全球直连
+    - DOMAIN-SUFFIX,ip6-loopback,全球直连
+    - DOMAIN-SUFFIX,lan,全球直连
+    - DOMAIN-SUFFIX,local,全球直连
+    - DOMAIN-SUFFIX,localhost,全球直连
+    - IP-CIDR,10.0.0.0/8,全球直连,no-resolve
+    - IP-CIDR,100.64.0.0/10,全球直连,no-resolve
+    - IP-CIDR,127.0.0.0/8,全球直连,no-resolve
+    - IP-CIDR,172.16.0.0/12,全球直连,no-resolve
+    - IP-CIDR,192.168.0.0/16,全球直连,no-resolve
+    - IP-CIDR,198.18.0.0/16,全球直连,no-resolve
+    - IP-CIDR,224.0.0.0/4,全球直连,no-resolve
+    - IP-CIDR6,::1/128,全球直连,no-resolve
+    - IP-CIDR6,fc00::/7,全球直连,no-resolve
+    - IP-CIDR6,fe80::/10,全球直连,no-resolve
+    - IP-CIDR6,fd00::/8,全球直连,no-resolve
+    - DOMAIN-SUFFIX,chat.openai.com,节点选择
+    - DOMAIN-SUFFIX,api.openai.com,节点选择
+    - DOMAIN-SUFFIX,platform.openai.com,节点选择
+    - DOMAIN-SUFFIX,openai.com,节点选择
+    - DOMAIN-SUFFIX,challenges.cloudflare.com,节点选择
+    - DOMAIN-SUFFIX,auth0.com,节点选择
+    - DOMAIN-SUFFIX,o33249.ingest.sentry.io,节点选择
+    - DOMAIN-SUFFIX,sentry.io,节点选择
+    - DOMAIN-SUFFIX,api-iam.intercom.io,节点选择
+    - DOMAIN-SUFFIX,js.intercomcdn.com,节点选择
+    - DOMAIN-SUFFIX,widget.intercom.io,节点选择
+    - DOMAIN-SUFFIX,cdn.openai.com,节点选择
+    - DOMAIN-SUFFIX,cdn.oaistatic.com,节点选择
+    - DOMAIN-SUFFIX,hub.docker.com,节点选择
+    - DOMAIN-SUFFIX,challenges.cloudflare.com,节点选择
+    - DOMAIN-SUFFIX,whatismyipaddress.com,节点选择
+    - DOMAIN-SUFFIX,events.statsigapi.net,节点选择
+    - DOMAIN-SUFFIX,api-iam.intercom.io,节点选择
+    - DOMAIN-SUFFIX,featuregates.org,节点选择
+    - DOMAIN-SUFFIX,tcr9i.chat.openai.com,节点选择
+    - DOMAIN-SUFFIX,lh3.googleusercontent.com,节点选择
+    - DOMAIN-SUFFIX,js.intercomcdn.com,节点选择
+    - DOMAIN-SUFFIX,widget.intercom.io,节点选择
+    - DOMAIN-SUFFIX,cdn.oaistatic.com,节点选择
+    - DOMAIN-SUFFIX,raw.githubusercontent.com,节点选择
+    - DOMAIN-SUFFIX,poe.com,节点选择
+    - DOMAIN-SUFFIX,maxcdn.bootstrapcdn.com,节点选择
+    - DOMAIN-SUFFIX,bootstrapcdn.com,节点选择
+    - DOMAIN-SUFFIX,www.anthropic.com,节点选择
+    - DOMAIN-SUFFIX,anthropic.com,节点选择
+    - DOMAIN-SUFFIX,app.slack.com,节点选择
+    - DOMAIN-SUFFIX,slack.com,节点选择
+    - GEOIP,CN,全球直连
+    - MATCH,漏网之鱼
+secret: UDtkGoRS
+socks-port: 7891
+tcp-concurrent: true
+tproxy-port: 7895
+tun:
+    auto-detect-interface: false
+    auto-route: false
+    device: utun
+    dns-hijack:
+        - tcp://any:53
+    enable: true
+    stack: system
+unified-delay: true

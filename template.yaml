@@ -1,0 +1,367 @@
+mixed-port: 7893
+allow-lan: true
+log-level: info
+external-controller: 0.0.0.0:9090
+dns:
+  enabled: true
+  listen: 0.0.0.0:7874
+  ipv6: true
+  default-nameserver:
+  - 223.5.5.5
+  - 114.114.114.114
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+  - "*.lan"
+  - "*.linksys.com"
+  - "*.linksyssmartwifi.com"
+  - swscan.apple.com
+  - mesu.apple.com
+  - "*.msftconnecttest.com"
+  - "*.msftncsi.com"
+  - time.*.com
+  - time.*.gov
+  - time.*.edu.cn
+  - time.*.apple.com
+  - time1.*.com
+  - time2.*.com
+  - time3.*.com
+  - time4.*.com
+  - time5.*.com
+  - time6.*.com
+  - time7.*.com
+  - ntp.*.com
+  - ntp1.*.com
+  - ntp2.*.com
+  - ntp3.*.com
+  - ntp4.*.com
+  - ntp5.*.com
+  - ntp6.*.com
+  - ntp7.*.com
+  - "*.time.edu.cn"
+  - "*.ntp.org.cn"
+  - "+.pool.ntp.org"
+  - time1.cloud.tencent.com
+  - "+.music.163.com"
+  - "*.126.net"
+  - musicapi.taihe.com
+  - music.taihe.com
+  - songsearch.kugou.com
+  - trackercdn.kugou.com
+  - "*.kuwo.cn"
+  - api-jooxtt.sanook.com
+  - api.joox.com
+  - joox.com
+  - "+.y.qq.com"
+  - "+.music.tc.qq.com"
+  - aqqmusic.tc.qq.com
+  - "+.stream.qqmusic.qq.com"
+  - "*.xiami.com"
+  - "+.music.migu.cn"
+  - "+.srv.nintendo.net"
+  - "+.stun.playstation.net"
+  - xbox.*.microsoft.com
+  - "+.xboxlive.com"
+  - localhost.ptlogin2.qq.com
+  - proxy.golang.org
+  - stun.*.*
+  - stun.*.*.*
+  - "*.mcdn.bilivideo.cn"
+  - "*.localdomain"
+  - "*.example"
+  - "*.invalid"
+  - "*.localhost"
+  - "*.test"
+  - "*.local"
+  - "*.home.arpa"
+  - time-ios.apple.com
+  - music.163.com
+  - "*.music.163.com"
+  - y.qq.com
+  - "*.y.qq.com"
+  - streamoc.music.tc.qq.com
+  - mobileoc.music.tc.qq.com
+  - isure.stream.qqmusic.qq.com
+  - dl.stream.qqmusic.qq.com
+  - amobile.music.tc.qq.com
+  - "*.music.migu.cn"
+  - music.migu.cn
+  - "+.msftconnecttest.com"
+  - "+.msftncsi.com"
+  - localhost.sec.qq.com
+  - "+.qq.com"
+  - "+.tencent.com"
+  - "*.n.n.srv.nintendo.net"
+  - xbox.*.*.microsoft.com
+  - "*.*.xboxlive.com"
+  - xnotify.xboxlive.com
+  - "+.battlenet.com.cn"
+  - "+.wotgame.cn"
+  - "+.wggames.cn"
+  - "+.wowsgame.cn"
+  - "+.wargaming.net"
+  - "+.stun.*.*"
+  - "+.stun.*.*.*"
+  - "+.stun.*.*.*.*"
+  - "+.stun.*.*.*.*.*"
+  - heartbeat.belkin.com
+  - "*.router.asus.com"
+  - swquery.apple.com
+  - swdownload.apple.com
+  - swcdn.apple.com
+  - swdist.apple.com
+  - lens.l.google.com
+  - stun.l.google.com
+  - na.b.g-tun.com
+  - "+.nflxvideo.net"
+  - "*.square-enix.com"
+  - "*.finalfantasyxiv.com"
+  - "*.ffxiv.com"
+  - "*.ff14.sdo.com"
+  - ff.dorado.sdo.com
+  - "+.media.dssott.com"
+  - shark007.net
+  - Mijia Cloud
+  - "+.cmbchina.com"
+  - "+.cmbimg.com"
+  - local.adguard.org
+  - "+.sandai.net"
+  - "+.n0808.com"
+  - "+.heheda.vip"
+  - "+.miwifi.com"
+  - "+.itv.lat"
+  - "+.pi.0472.org"
+  - services.googleapis.cn
+  nameserver:
+  - https://doh.apad.pro/dns-query
+  - tls://1.1.1.1/dns-query
+  - https://dns.alidns.com/dns-query
+  fallback-filter:
+    geoip: false
+    ipcidr:
+    - 240.0.0.0/4
+    - 0.0.0.0/32
+  enable: true
+  fallback:
+  - "https://dns.cloudflare.com/dns-query#全球直连"
+  - "https://1.1.1.1/dns-query#全球直连"
+  - "1.1.1.1:53#全球直连"
+  - "8.8.8.8:53#全球直连"
+  - "202.96.128.86:53#全球直连"
+  - "202.96.128.166:53#全球直连"
+proxies:
+  - {}
+proxy-groups:
+- name: "节点选择"
+  type: select
+  proxies:
+  - "自动选择"
+  - DIRECT
+- name: "自动选择"
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+    - {}
+- name: "国外通用"
+  type: select
+  proxies:
+  - "节点选择"
+  - "自动选择"
+  - "全球直连"
+- name: "全球直连"
+  type: select
+  proxies:
+  - DIRECT
+  - "节点选择"
+  - "自动选择"
+- name: "全球拦截"
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: "漏网之鱼"
+  type: select
+  proxies:
+  - "节点选择"
+  - "全球直连"
+  - "自动选择"
+rules:
+- DST-PORT,7895,REJECT
+- DST-PORT,7892,REJECT
+- IP-CIDR,198.18.0.1/16,REJECT,no-resolve
+- "RULE-SET,Rule-provider-custom-tiz,节点选择"
+- "RULE-SET,applications,全球直连"
+- "RULE-SET,private,全球直连"
+- "RULE-SET,reject,全球拦截"
+- "RULE-SET,icloud,全球直连"
+- "RULE-SET,apple,全球直连"
+- "RULE-SET,google,国外通用"
+- "RULE-SET,proxy,国外通用"
+- "RULE-SET,direct,全球直连"
+- "RULE-SET,lancidr,全球直连,no-resolve"
+- "RULE-SET,cncidr,全球直连,no-resolve"
+- "RULE-SET,telegramcidr,国外通用"
+- "GEOIP,LAN,全球直连"
+- "DOMAIN-SUFFIX,itv.lat,全球直连,no-resolve"
+- "DOMAIN-SUFFIX,pi.0472.org,全球直连,no-resolve"
+- "DOMAIN-SUFFIX,acl4.ssr,全球直连"
+- "DOMAIN-SUFFIX,ip6-localhost,全球直连"
+- "DOMAIN-SUFFIX,ip6-loopback,全球直连"
+- "DOMAIN-SUFFIX,lan,全球直连"
+- "DOMAIN-SUFFIX,local,全球直连"
+- "DOMAIN-SUFFIX,localhost,全球直连"
+- "IP-CIDR,10.0.0.0/8,全球直连,no-resolve"
+- "IP-CIDR,100.64.0.0/10,全球直连,no-resolve"
+- "IP-CIDR,127.0.0.0/8,全球直连,no-resolve"
+- "IP-CIDR,172.16.0.0/12,全球直连,no-resolve"
+- "IP-CIDR,192.168.0.0/16,全球直连,no-resolve"
+- "IP-CIDR,198.18.0.0/16,全球直连,no-resolve"
+- "IP-CIDR,224.0.0.0/4,全球直连,no-resolve"
+- "IP-CIDR6,::1/128,全球直连,no-resolve"
+- "IP-CIDR6,fc00::/7,全球直连,no-resolve"
+- "IP-CIDR6,fe80::/10,全球直连,no-resolve"
+- "IP-CIDR6,fd00::/8,全球直连,no-resolve"
+- "DOMAIN-SUFFIX,chat.openai.com,节点选择"
+- "DOMAIN-SUFFIX,api.openai.com,节点选择"
+- "DOMAIN-SUFFIX,platform.openai.com,节点选择"
+- "DOMAIN-SUFFIX,openai.com,节点选择"
+- "DOMAIN-SUFFIX,challenges.cloudflare.com,节点选择"
+- "DOMAIN-SUFFIX,auth0.com,节点选择"
+- "DOMAIN-SUFFIX,o33249.ingest.sentry.io,节点选择"
+- "DOMAIN-SUFFIX,sentry.io,节点选择"
+- "DOMAIN-SUFFIX,api-iam.intercom.io,节点选择"
+- "DOMAIN-SUFFIX,js.intercomcdn.com,节点选择"
+- "DOMAIN-SUFFIX,widget.intercom.io,节点选择"
+- "DOMAIN-SUFFIX,cdn.openai.com,节点选择"
+- "DOMAIN-SUFFIX,cdn.oaistatic.com,节点选择"
+- "DOMAIN-SUFFIX,hub.docker.com,节点选择"
+- "DOMAIN-SUFFIX,challenges.cloudflare.com,节点选择"
+- "DOMAIN-SUFFIX,whatismyipaddress.com,节点选择"
+- "DOMAIN-SUFFIX,events.statsigapi.net,节点选择"
+- "DOMAIN-SUFFIX,api-iam.intercom.io,节点选择"
+- "DOMAIN-SUFFIX,featuregates.org,节点选择"
+- "DOMAIN-SUFFIX,tcr9i.chat.openai.com,节点选择"
+- "DOMAIN-SUFFIX,lh3.googleusercontent.com,节点选择"
+- "DOMAIN-SUFFIX,js.intercomcdn.com,节点选择"
+- "DOMAIN-SUFFIX,widget.intercom.io,节点选择"
+- "DOMAIN-SUFFIX,cdn.oaistatic.com,节点选择"
+- "DOMAIN-SUFFIX,raw.githubusercontent.com,节点选择"
+- "DOMAIN-SUFFIX,poe.com,节点选择"
+- "DOMAIN-SUFFIX,maxcdn.bootstrapcdn.com,节点选择"
+- "DOMAIN-SUFFIX,bootstrapcdn.com,节点选择"
+- "DOMAIN-SUFFIX,www.anthropic.com,节点选择"
+- "DOMAIN-SUFFIX,anthropic.com,节点选择"
+- "DOMAIN-SUFFIX,app.slack.com,节点选择"
+- "DOMAIN-SUFFIX,slack.com,节点选择"
+- "GEOIP,CN,全球直连"
+- "MATCH,漏网之鱼"
+rule-providers:
+  reject:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
+    path: "./rule_provider/reject.yaml"
+    interval: 86400
+  icloud:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt
+    path: "./rule_provider/icloud.yaml"
+    interval: 86400
+  apple:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt
+    path: "./rule_provider/apple.yaml"
+    interval: 86400
+  google:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt
+    path: "./rule_provider/google.yaml"
+    interval: 86400
+  proxy:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt
+    path: "./rule_provider/proxy.yaml"
+    interval: 86400
+  direct:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt
+    path: "./rule_provider/direct.yaml"
+    interval: 86400
+  private:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt
+    path: "./rule_provider/private.yaml"
+    interval: 86400
+  gfw:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt
+    path: "./rule_provider/gfw.yaml"
+    interval: 86400
+  tld-not-cn:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt
+    path: "./rule_provider/tld-not-cn.yaml"
+    interval: 86400
+  telegramcidr:
+    type: http
+    behavior: ipcidr
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt
+    path: "./rule_provider/telegramcidr.yaml"
+    interval: 86400
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt
+    path: "./rule_provider/cncidr.yaml"
+    interval: 86400
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt
+    path: "./rule_provider/lancidr.yaml"
+    interval: 86400
+  applications:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt
+    path: "./rule_provider/applications.yaml"
+    interval: 86400
+  Rule-provider-custom-tiz:
+    type: http
+    behavior: domain
+    path: "./rule_provider/Rule-provider-custom-tiz.yaml"
+    format: text
+    url: https://git.heheda.vip/root/clash-rule-provider/raw/master/custom-tizi.txt
+    interval: 86400
+redir-port: 7892
+tproxy-port: 7895
+port: 7890
+socks-port: 7891
+mode: rule
+secret: UDtkGoRS
+bind-address: "*"
+ipv6: true
+geodata-loader: standard
+tcp-concurrent: true
+unified-delay: true
+tun:
+  enable: true
+  stack: system
+  device: utun
+  auto-route: false
+  auto-detect-interface: false
+  dns-hijack:
+  - tcp://any:53
+profile:
+  store-selected: true
+  store-fake-ip: true
